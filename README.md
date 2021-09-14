@@ -7,7 +7,7 @@
 * Muhammad Amjad
 
 
-## Sources of data
+## Sources of Data:
 * country_vaccinations_by_manufacturer.csv (COVID-19 World Vaccination Progress | Kaggle)
 
 https://www.kaggle.com/gpreda/covid-world-vaccination-progress
