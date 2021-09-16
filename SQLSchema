@@ -1,0 +1,17 @@
+-- Create the Table
+CREATE TABLE vacstocks (
+  date DATE PRIMARY KEY,
+  location TEXT,
+  vaccine Text, 
+  total_vaccinations TEXT,
+	high Dec,
+	low Dec,
+	open Dec,
+	close Dec,
+	Volume Dec,
+	adjusted_close Dec
+	
+);
+
+-- Query to check successful load
+SELECT * FROM vacstocks;
