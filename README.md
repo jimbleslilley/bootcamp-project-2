@@ -41,6 +41,6 @@ To run the notebook.ipynb file you will need to install the following packages/d
 * SQLite `conda install -c anaconda sqlite -y`
 * Psycopg2 `pip install psycopg2`
 
-To connect to the PostgreSQL database you will need to add your PgAdmin4 username and password to a config.py file
+To connect to the PostgreSQL database you will need to add your PgAdmin 4 username and password to a config.py file
 ![config_file.png](Readme_Images/config_file.png)
 The config.py file should be stored in your local repository folder.
