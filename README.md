@@ -39,9 +39,9 @@ The goal of this project is to produce a dataset which can utilised in further r
 To run the notebook.ipynb file you will need to install the following packages/dependencies:
 
 
-‘pip install SQLAlchemy’
-‘conda install -c anaconda sqlite -y’
-‘pip install psycopg2’
+`pip install SQLAlchemy`
+`conda install -c anaconda sqlite -y`
+`pip install psycopg2`
 
 To connect to the PostgreSQL database you will need to add your PgAdmin4 username and password to a config.py file
 ![config_file.png](Readme_Images/config_file.png)
