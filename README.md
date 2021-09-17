@@ -3,10 +3,10 @@
 ![Covid_vaccine.jpg](Covid_vaccine.jpg)
 
 ## Group members: 
-* Arshad Sheikh
-* James Lilley
-* Jessica Uppal
-* Muhammad Amjad
+* [Arshad Sheikh](https://github.com/ashsams18)
+* [James Lilley](https://github.com/jimbleslilley)
+* [Jessica Uppal](https://github.com/JessicaUppal)
+* [Muhammad Amjad]
 
 
 ## Sources of Data:
