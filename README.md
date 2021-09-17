@@ -16,10 +16,10 @@ Our dataset contains two CSV files both located in the [resources](resources/) f
 ![CSV_files.png](Readme_Images/CSV_files.png)
 
 
-* The first dataset is [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)\
+* The country_vaccinations_by_manafacturer dataset is [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)\ 
 
 
-* The second dataset is [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019)\
+* The vaccine_stocks dataset is [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019)\
 
 
 
