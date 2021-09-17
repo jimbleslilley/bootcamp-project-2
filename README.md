@@ -2,11 +2,11 @@
 
 ![Covid_vaccine.jpg](Covid_vaccine.jpg)
 
-## Group members: 
+## Collaborators: 
 * [Arshad Sheikh](https://github.com/ashsams18)
 * [James Lilley](https://github.com/jimbleslilley)
 * [Jessica Uppal](https://github.com/JessicaUppal)
-* [Muhammad Amjad]
+* [Muhammad Amjad](https://github.com/amjad5050)
 
 
 ## Sources of Data:
@@ -37,4 +37,5 @@ The goal of this project is to produce a dataset which can utilised in further r
 * Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
 * Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
+
 
