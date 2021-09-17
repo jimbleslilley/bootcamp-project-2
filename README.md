@@ -10,19 +10,24 @@
 
 
 ## Sources of Data:
+
+Our dataset contains two CSV files both located in the [resources](resources/) folder:
+
 * country_vaccinations_by_manufacturer.csv (COVID-19 World Vaccination Progress | Kaggle)
 
 https://www.kaggle.com/gpreda/covid-world-vaccination-progress
+
 
 * vaccine_stocks.csv (COVID-19 Vaccine Companies: Stock Data | Kaggle)
 
 https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019
 
+
 ## Type of final production database
 PostgreSQL
 
 ## Plan
-The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both Kaggle datasets and transformed in Jupyter notebook. The transformed data will then be loaded into the PostgreSQL database. 
+The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both Kaggle datasets and transformed in Jupyter notebook. The transformed data will then be loaded into a PostgreSQL database. 
 
 
 ## Goal of the ETL 
