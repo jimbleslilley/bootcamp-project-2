@@ -13,7 +13,7 @@ The primary coding for this project was built using Jupyter Notebook.
 - print vaccine in manufacturer df
 - print vaccine in stocks df by taking each unique high value
 - Mutual Vaccines
-manufacturer_df - stocks_df
+manufacturer - stocks_df
 'Pfizer/BioNTech' : 'BioNTech'
 'Moderna' : 'Moderna'
 'Johnson&Johnson' : 'Johnson & Johnson'
@@ -22,19 +22,19 @@ manufacturer_df - stocks_df
 'Oxford/AstraZeneca' : 'Astrazeneca'
 These were manually found and listed.
 
-The following columns in the manufacturer_df table need to be renamed to match the stocks_df
+The following columns in the manufacturer table need to be renamed to match the stocks_df
 - rename columns
 - -Table Joining
 Now that our mutual columns are joinable, the following can be done:
 
-Create columns in the manufacturer_df for the stock high, low, open, close and adj close.
+Create columns in the manufacturer for the stock high, low, open, close and adj close.
 Join the tables so that each stocks data is input into one of these columns
 A solution for making the join as simple as possible is to take the stocks_df and input all of the data into a new dataframe, where the columns are the name of the manufacturer, the date and then the high, low, open, close and adj close values.
 
 - Example of how these two lists can call a column of data
 - create empty list to hold values
 - loop through each row, the vaccine and then the type of stock
-- stock the date, manufacturer,type of stock and stock value for a given row
+- stock the date, manufacturer, type of stock and stock value for a given row
 - input data in list
 - append list into container list
 - use list of lists to create new, easier to manage dataframe
@@ -67,10 +67,11 @@ When we drop duplicates from our final table, we will expect to see 3824.0 rows.
 
 SQL Schema, PG Admin 4
 Create table, Run table, Run Python
-Resturn to PGAdmin and run Query, which displays the import from Jupyter Notebook, confirming the connection and successful importation of data.
+Return to PGAdmin and run Query, which displays the import from Jupyter Notebook, confirming the connection and successful importation of data.
 
 Report prepared.
 
-All files uploaded to the Git hub repository and made available to the intructors.
+All files uploaded to the Git hub repository and made available to the instructors.
+
 
 
