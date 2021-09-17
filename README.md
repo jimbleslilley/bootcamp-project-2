@@ -13,14 +13,15 @@
 
 Our dataset contains two CSV files both located in the [resources](resources/) folder:
 
-* country_vaccinations_by_manufacturer.csv (COVID-19 World Vaccination Progress | Kaggle)
-
-https://www.kaggle.com/gpreda/covid-world-vaccination-progress
+![CSV_files.png](Readme_Images/CSV_files.png)
 
 
-* vaccine_stocks.csv (COVID-19 Vaccine Companies: Stock Data | Kaggle)
+* The first dataset is [COVID-19 World Vaccination Progress] (https://www.kaggle.com/gpreda/covid-world-vaccination-progress)\
 
-https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019
+
+
+* The second dataset is [COVID-19 Vaccine Companies: Stock Data] (https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019)\
+
 
 
 ## Project Proposal
@@ -39,9 +40,9 @@ The goal of this project is to produce a dataset which can utilised in further r
 To run the notebook.ipynb file you will need to install the following packages/dependencies:
 
 
-`pip install SQLAlchemy`
-`conda install -c anaconda sqlite -y`
-`pip install psycopg2`
+SQLAlchemy `pip install SQLAlchemy`
+SQLite `conda install -c anaconda sqlite -y`
+Psycopg2 `pip install psycopg2`
 
 To connect to the PostgreSQL database you will need to add your PgAdmin4 username and password to a config.py file
 ![config_file.png](Readme_Images/config_file.png)
