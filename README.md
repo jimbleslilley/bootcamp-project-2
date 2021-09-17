@@ -1,5 +1,7 @@
 # Project #2: Extract, Transform, and Load
 
+![Covid_vaccine.jpg](Covid_vaccine.jpg)
+
 ## Group members: 
 * Arshad Sheikh
 * James Lilley
@@ -12,20 +14,22 @@
 
 https://www.kaggle.com/gpreda/covid-world-vaccination-progress
 
-* vaccine_stocks.csv (COVID-19 Vaccine Companies : Stock Data | Kaggle)
+* vaccine_stocks.csv (COVID-19 Vaccine Companies: Stock Data | Kaggle)
 
 https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019
 
 ## Type of final production database
-PostgresSQL
+PostgreSQL
 
 ## Plan
-The intention is to look at two different sources of Covid 19 data: Vaccinations by manufacturers and vaccine stocks and then combining the data as one dataset onto one database. We intend to extract data from our two csv files, sources from Kaggle, transform from them using Jupyter Notebook and then load them into PgAdmin 4, ready for use. 
+The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both Kaggle datasets and transformed in Jupyter notebook. The transformed data will then be loaded into the PostgreSQL database. 
+
 
 ## Goal of the ETL 
 
-The goal of this project is to be left with a dataset which can be used be a data analyist to conduct research into the production of the COVID-19 Vaccine by manufacterurs and the effect this had on their company's stocks. Various points of focus for a data analyst could include: 
+The goal of this project is to produce a dataset which can utilised in further research by data analysts, who may be exploring production of COVID-19 Vaccines by individual manufacturers, and the effect this had on their company's stocks and consequently their success. Specific areas of application for a data analyst could include: 
 
-* If the locations a vaccine is being supplied to effected a vaccine manufacturer's stock price. 
+* Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
-* If there is a relationship between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
+* Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
+
