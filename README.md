@@ -1,6 +1,6 @@
 # Project #2: Extract, Transform, and Load
 
-![Covid_vaccine.jpg](Covid_vaccine.jpg)
+![Covid_vaccine.jpg](Readme_Images/Covid_vaccine.jpg)
 
 ## Collaborators: 
 * [Arshad Sheikh](https://github.com/ashsams18)
@@ -23,11 +23,8 @@ https://www.kaggle.com/gpreda/covid-world-vaccination-progress
 https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019
 
 
-## Type of final production database
-PostgreSQL
-
-## Plan
-The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both Kaggle datasets and transformed in Jupyter notebook. The transformed data will then be loaded into a PostgreSQL database. 
+## Project Proposal
+The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both CSV’s and transformed using Jupyter notebook. The transformed data will then be loaded into a PostgreSQL database. 
 
 
 ## Goal of the ETL 
@@ -38,4 +35,14 @@ The goal of this project is to produce a dataset which can utilised in further r
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
 * Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
 
+## Required Setup
+To run the notebook.ipynb file you will need to install the following packages/dependencies:
 
+
+‘pip install SQLAlchemy’
+‘conda install -c anaconda sqlite -y’
+‘pip install psycopg2’
+
+To connect to the PostgreSQL database you will need to add your PgAdmin4 username and password to a config.py file
+![config_file.png](Readme_Images/config_file.png)
+The config.py file should be stored in your local repository folder.
