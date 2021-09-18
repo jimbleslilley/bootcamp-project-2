@@ -37,6 +37,7 @@ To run the notebook.ipynb file you will need to install the following packages/d
 To connect to the PostgreSQL database you will need to add your PgAdmin 4 username and password to a config.py file
 ![config_file.png](Readme_Images/config_file.png)
 The config.py file should be stored in your local repository folder.
+
 ## Extract
 Two files are selected from Kaggle.com and the files are csv format.
  Both files are converted to panda Data Frams
