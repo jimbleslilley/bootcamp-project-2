@@ -1,27 +1,120 @@
-# Project #2: Extract, Transform, and Load
+﻿# Project #2: Extract, Transform, and Load
 
-## Group members: 
-* Arshad Sheikh
-* James Lilley
-* Jessica Uppal
-* Muhammad Amjad
+![Covid_vaccine.jpg](Readme_Images/Covid_vaccine.jpg)
 
 
-## Sources of Data:
-* country_vaccinations_by_manufacturer.csv (COVID-19 World Vaccination Progress | Kaggle)
+## Project Proposal
+The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both CSV’s and transformed using Jupyter notebook. The transformed data will then be loaded into a PostgreSQL database. 
 
-https://www.kaggle.com/gpreda/covid-world-vaccination-progress
-
-* vaccine_stocks.csv (COVID-19 Vaccine Companies : Stock Data | Kaggle)
-
-https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019
-
-## Type of final production database
-PostgresSQL
-
-## Plan
-The intention is to look at two different sources of Covid 19 data: Vaccinations by manufacturers and vaccine stocks and then combining the data as one dataset onto one database. We intend to extract data from Kaggle, use Jupyter notebook and PgAdmin 4 to perform the coding and subsequently present the data in PgAdmin.
 
 ## Goal of the ETL 
 
-The goal of this project is to be left with a dataset which can be used be a data analyist to conduct research into the production of the COVID-19 Vaccine by manufacterurs and the effect this had on their company's stocks. Whether this be through exploring whether the countries the manufacturer issued its vaccine to had an effect. Or the quantity of vaccine supplied had any observable change. 
+The goal of this project is to produce a dataset which can utilised in further research by data analysts, who may be exploring production of COVID-19 Vaccines by individual manufacturers, and the effect this had on their company's stocks and consequently their success. Specific areas of application for a data analyst could include: 
+
+* Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
+* If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
+* Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
+
+## Sources of Data:
+
+Our dataset contains two CSV files available from [Kaggle.com](https://www.kaggle.com). Both CSV’s are located in the [resources](resources/) folder:
+
+![CSV_files.png](Readme_Images/CSV_files.png)
+
+
+* The country_vaccinations_by_manafacturer CSV is from the [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress) dataset.
+
+
+* The vaccine_stocks CSV is from the [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019). 
+
+
+## Required Setup
+To run the notebook.ipynb file you will need to install the following packages/dependencies:
+* SQLAlchemy `pip install SQLAlchemy`
+* SQLite `conda install -c anaconda sqlite -y`
+* Psycopg2 `pip install psycopg2`
+
+To connect to the PostgreSQL database you will need to add your PgAdmin 4 username and password to a config.py file
+![config_file.png](Readme_Images/config_file.png)
+The config.py file should be stored in your local repository folder.
+
+## Extract
+Two files are selected from Kaggle.com and both files are csv format.
+Both files are converted to panda DataFrams.
+
+Dataframes are named as manufacturer_df and stocks_df.
+All the columns are listed for both Dataframes.
+manufacturer_df columns are following
+
+(['location', 'date', 'vaccine', 'total_vaccinations']
+
+
+stocks_df columns : 
+
+['Date', 'High_BioNTech', 'Low_BioNTech', 'Open_BioNTech',
+       'Close_BioNTech', 'Volume_BioNTech', 'Adj Close_BioNTech',
+       'High_Moderna', 'Low_Moderna', 'Open_Moderna', 'Close_Moderna',
+       'Volume_Moderna', 'Adj Close_Moderna', 'High_Johnson & Johnson',
+       'Low_Johnson & Johnson', 'Open_Johnson & Johnson',
+       'Close_Johnson & Johnson', 'Volume_Johnson & Johnson',
+       'Adj Close_Johnson & Johnson', 'High_Inovio Pharmaceuticals',
+       'Low_Inovio Pharmaceuticals', 'Open_Inovio Pharmaceuticals',
+       'Close_Inovio Pharmaceuticals', 'Volume_Inovio Pharmaceuticals',
+       'Adj Close_Inovio Pharmaceuticals', 'High_Sinovac', 'Low_Sinovac',
+       'Open_Sinovac', 'Close_Sinovac', 'Volume_Sinovac', 'Adj Close_Sinovac',
+       'High_Sinopharm', 'Low_Sinopharm', 'Open_Sinopharm', 'Close_Sinopharm',
+       'Volume_Sinopharm', 'Adj Close_Sinopharm', 'High_Novavax',
+       'Low_Novavax', 'Open_Novavax', 'Close_Novavax', 'Volume_Novavax',
+       'Adj Close_Novavax', 'High_Astrazeneca', 'Low_Astrazeneca',
+       'Open_Astrazeneca', 'Close_Astrazeneca', 'Volume_Astrazeneca',
+       'Adj Close_Astrazeneca']
+      
+All the columns are checked to
+ensure the dates and vaccine manufacturer names in each table match so that the tables can be joined.
+
+## Transform
+8 manufactures are found ['BioNTech', 'Moderna', 'Johnson & Johnson', 'Inovio Pharmaceuticals', 'Sinovac', 'Sinopharm', 'Novavax', 'Astrazeneca'].
+The above columns  were manually found and listed.
+
+The following columns in the manufacturer_df table need to be renamed to match the stocks_df
+{'Pfizer/BioNTech' : 'BioNTech',
+                                                      'Johnson&Johnson' : 'Johnson & Johnson',
+                                                      'Sinopharm/Beijing': 'Sinopharm',
+                                                      'Oxford/AstraZeneca' : 'Astrazeneca'}.
+Before Joining Tables, date types checked in both tables and Both dates follow the same format, no changes needed.
+
+We have 22944 rows, which divided by the total number of unique dates (478) is 48.0.
+48.0 divided by the total different number of stock types (6) is 8.0.
+As we have 8 unique vaccines, this means each vaccine is present with all data on each day. 
+As such, we can confirm no data is missing.
+
+When we drop duplicates from our final table, we will expect to see 3824.0 rows.
+a new dataframe sorted_df is created. it has coulmns of manufacturer and High.
+This is carried out in the same way for each of the differnt stock types to add the remaining five columns which are Low,	Open,	Close	,Volume, and	Adj Close.
+Once this is done, we can go back to our manufacturer table, and join the locations to this table
+our final data frame (schema_ready_df) look like this (pic to be added)
+
+## Load
+
+SQL schema is created to convert the final table in PostgreSQL.
+File is loaded  on PgAdmin. 
+
+
+## Collaborators: 
+* [Arshad Sheikh](https://github.com/ashsams18)
+* [James Lilley](https://github.com/jimbleslilley)
+* [Jessica Uppal](https://github.com/JessicaUppal)
+* [Muhammad Amjad](https://github.com/amjad5050)
+
+##  Project Work Day 1
+on first day all the members did the brainstorming to finalize the project and choose the csv files.
+Arshad wrote the project proposal as group decided one person to write and rest take part in dictation.
+## Project Work Day 2
+Again group decided one person will take the responsibilty and that was James. All other members took part on plan of execution.
+Data was converted, cleaned and transformed. Also all group members collaborated in loading it onto SQL.
+## Project Day 3 
+Jessica and Amjad took the responsibilty of writting the Readme.Arshad got extracts on Report. Finally all group members decided 
+to take small parts of reports and everyone contributed in preparing the final Readme/report.
+
+
+
