@@ -3,7 +3,7 @@
 Now that we have established that both of our dates used the same format and who our mutual vaccine manufacturers are, we used the rename function to change the names of the vaccines in the manufacturer_df. 
 We chose to rename them in the manufacturer_df and not the stocks_df as the vaccine names were easier to read. 
 
-![rename.png](Readme_Images/rename.png)
+![rename.png](Readme_Images/rename.PNG)
 
 The challenge we faced in the stocks_df was that the names of each vaccine supplier and the stock value was stored in columns, as opposed to rows. 
 We needed to divise a way to take the values from the columns, and insert them into rows. 
@@ -13,13 +13,13 @@ At which point we could join this information back with the manufacturer_df to s
 Our first step was to create a new list of lists, this list of lists was created through a nested loop. 
 We extracted the name of each vaccine, stock type and value from their respectives columns on a row and added the date
 
-![container.png](Readme_Images/container.png)
+![container.png](Readme_Images/container.PNG)
 
 Now that this was completed, our data was easier to work with. 
 At this point, a mathematical check was conducted to see if each vaccine was present on each date in the dataset. 
 To ensure no data was misplaced or lost during any further transformations. 
 
-![calc.png](Readme_Images/calc.png)
+![calc.png](Readme_Images/calc.PNG)
 
 Now we could take this data where the stock type is stored in rows and move it back into columns which store the stock value. 
 
