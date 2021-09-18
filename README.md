@@ -5,7 +5,7 @@
 
 * [Project Proposal](#Project-header)
 * [Goal of the ETL](#Goal-header)
-* [Sources of data](#Sources-header)
+* [Sources of Data](#Sources-header)
 * [Required Setup](#Required-header) 
 * [Data Extraction](#Extraction-header)
 * [Data Transformation](#Transform-header)
