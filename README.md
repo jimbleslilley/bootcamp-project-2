@@ -171,6 +171,7 @@ A PostgreSQL query was then created on ‘pgAdmin 4’ to populate the table wit
 Python coding, Data Tansformation report section.
 * [Jessica Uppal](https://github.com/JessicaUppal)
 * [Muhammad Amjad](https://github.com/amjad5050)
+*project propsal Data Extraction,sql,Report/Readme
 
 
 Although tasks were assigned and worked on as shown above, work and decision making was always a team effort. 
