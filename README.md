@@ -48,6 +48,27 @@ manufacturer_df columns are following
 
 (['location', 'date', 'vaccine', 'total_vaccinations']
 
+
+stocks_df columns : 
+
+['Date', 'High_BioNTech', 'Low_BioNTech', 'Open_BioNTech',
+       'Close_BioNTech', 'Volume_BioNTech', 'Adj Close_BioNTech',
+       'High_Moderna', 'Low_Moderna', 'Open_Moderna', 'Close_Moderna',
+       'Volume_Moderna', 'Adj Close_Moderna', 'High_Johnson & Johnson',
+       'Low_Johnson & Johnson', 'Open_Johnson & Johnson',
+       'Close_Johnson & Johnson', 'Volume_Johnson & Johnson',
+       'Adj Close_Johnson & Johnson', 'High_Inovio Pharmaceuticals',
+       'Low_Inovio Pharmaceuticals', 'Open_Inovio Pharmaceuticals',
+       'Close_Inovio Pharmaceuticals', 'Volume_Inovio Pharmaceuticals',
+       'Adj Close_Inovio Pharmaceuticals', 'High_Sinovac', 'Low_Sinovac',
+       'Open_Sinovac', 'Close_Sinovac', 'Volume_Sinovac', 'Adj Close_Sinovac',
+       'High_Sinopharm', 'Low_Sinopharm', 'Open_Sinopharm', 'Close_Sinopharm',
+       'Volume_Sinopharm', 'Adj Close_Sinopharm', 'High_Novavax',
+       'Low_Novavax', 'Open_Novavax', 'Close_Novavax', 'Volume_Novavax',
+       'Adj Close_Novavax', 'High_Astrazeneca', 'Low_Astrazeneca',
+       'Open_Astrazeneca', 'Close_Astrazeneca', 'Volume_Astrazeneca',
+       'Adj Close_Astrazeneca']
+      
 All the columns are checked to
 ensure the dates and vaccine manufacturer names in each table match so that the tables can be joined.
 
