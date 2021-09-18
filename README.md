@@ -11,15 +11,16 @@
 
 ## Sources of Data:
 
-Our dataset contains two CSV files both located in the [resources](resources/) folder:
+The dataset contains two CSV files both located in the [resources](resources/) folder:
 
 ![CSV_files.png](Readme_Images/CSV_files.png)
 
+Both are available from [Kaggle.com](https://www.kaggle.com)
 
-* The country_vaccinations_by_manafacturer dataset is [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)  
+* The country_vaccinations_by_manafacturer dataset is the [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)  
 
 
-* The vaccine_stocks dataset is [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019) 
+* The vaccine_stocks dataset is the [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019) 
 
 
 
@@ -31,7 +32,7 @@ The project will be focussing on two different sources of data on Covid-19: Vacc
 
 The goal of this project is to produce a dataset which can utilised in further research by data analysts, who may be exploring production of COVID-19 Vaccines by individual manufacturers, and the effect this had on their company's stocks and consequently their success. Specific areas of application for a data analyst could include: 
 
-* Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
+* Whether the location that vaccines are being supplied to, have an effect on the manufacturer's stock price. 
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
 * Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
 
@@ -42,5 +43,7 @@ To run the notebook.ipynb file you will need to install the following packages/d
 * Psycopg2 `pip install psycopg2`
 
 To connect to the PostgreSQL database you will need to add your PgAdmin 4 username and password to a config.py file
+
 ![config_file.png](Readme_Images/config_file.png)
-The config.py file should be stored in your local repository folder.
+
+The config.py file should be stored in your local cloned repository folder.
