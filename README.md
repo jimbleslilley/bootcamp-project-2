@@ -40,8 +40,13 @@ The config.py file should be stored in your local repository folder.
 
 ## Extract
 Two files are selected from Kaggle.com and both files are csv format.
- Both files are converted to panda Data Frams
+Both files are converted to panda DataFrams.
+
 Dataframes are named as manufacturer_df and stocks_df.
+All the columns are listed for both Dataframes.
+manufacturer_df columns are following
+
+(['location', 'date', 'vaccine', 'total_vaccinations']
 
 All the columns are checked to
 ensure the dates and vaccine manufacturer names in each table match so that the tables can be joined.
