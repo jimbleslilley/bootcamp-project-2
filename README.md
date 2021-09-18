@@ -138,7 +138,6 @@ A localhost connection to a PostgreSQL server was created and a connection made 
 
 ![Connection to SQL.png](Readme_Images/Connection to SQL.png)
 
-
 ![Connection to SQL2.png](Readme_Images/Connection to SQL2.png)
 
 
