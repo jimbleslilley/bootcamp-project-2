@@ -106,3 +106,15 @@ File is loaded  on PgAdmin.
 * [Jessica Uppal](https://github.com/JessicaUppal)
 * [Muhammad Amjad](https://github.com/amjad5050)
 
+##  Project Work Day 1
+on first day all the members did the brainstorming to finalize the project and choose the csv files.
+Arshad wrote the project proposal as group decided one person to write and rest take part in dictation.
+## Project Work Day 2
+Again group decided one person will take the responsibilty and that was James. All other members took part on plan of execution.
+Data was converted, cleaned and transformed. Also all group members collaborated in loading it onto SQL.
+## Project Day 3 
+Jessica and Amjad took the responsibilty of writting the Readme.Arshad got extracts on Report. Finally all group members decided 
+to take small parts of reports and everyone contributed in preparing the final Readme/report.
+
+take small portions of report 
+
