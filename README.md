@@ -136,10 +136,10 @@ Now that we have finished our transformation, we could now begin loading this da
 
 A localhost connection to a PostgreSQL server was created and a connection made to it. The *connection* was made via an *engine* on *Jupyter Notebook* that could talk to the *database*.
 
-![Connection to SQL.png](Readme_Images/Connection to SQL png)
+![Connection to SQL.png](Readme_Images/Connection to SQL.png)
 
 
-![Connection to SQL2.png](Readme_Images/Connection to SQL2 png)
+![Connection to SQL2.png](Readme_Images/Connection to SQL2.png)
 
 
 A PostgreSQL query was then created on ‘pgAdmin 4’ to populate the table with the imported CSV datasets confirming the connection and successful importation of data.
