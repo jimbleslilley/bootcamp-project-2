@@ -24,7 +24,7 @@ The project focuses on the current topic of COVID-19 vaccinations. The chosen da
 The goal of this project is to produce a dataset which can utilised in further research by data analysts, who may be exploring production of COVID-19 Vaccines by individual manufacturers, and the effect this had on their company's stocks and consequently their success. Specific areas of application for a data analyst could include: 
 * Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
-* Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers.
+* Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
 
 
 ## <a id="Sources-header"></a>Sources of Data
@@ -167,19 +167,8 @@ A PostgreSQL query was then created on ‘pgAdmin 4’ to populate the table wit
 
 * [Arshad Sheikh](https://github.com/ashsams18)
 * [James Lilley](https://github.com/jimbleslilley)
+- Python coding, Data Tansformation report section.
 * [Jessica Uppal](https://github.com/JessicaUppal)
 * [Muhammad Amjad](https://github.com/amjad5050)
 
-##  Project Work Day 1
-on first day all the members did the brainstorming to finalize the project and choose the csv files.
-Arshad wrote the project proposal as group decided one person to write and rest take part in dictation.
-## Project Work Day 2
-Again, group decided one person will take the responsibility and that was James. All other members took part on plan of execution.
-Data was converted, cleaned and transformed. Also all group members collaborated in loading it onto SQL.
-## Project Day 3 
-Jessica and Amjad took the responsibility of writing the Readme.Arshad got extracts on Report. Finally, all group members decided 
-to take small parts of reports and everyone contributed in preparing the final Readme/report.
-
-
-
-
+Although tasks were assigned and worked on as shown above, work and decision making was always a team effort. 
