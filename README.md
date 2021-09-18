@@ -24,7 +24,7 @@ The project focuses on the current topic of COVID-19 vaccinations. The chosen da
 The goal of this project is to produce a dataset which can utilised in further research by data analysts, who may be exploring production of COVID-19 Vaccines by individual manufacturers, and the effect this had on their company's stocks and consequently their success. Specific areas of application for a data analyst could include: 
 * Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
-* Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
+* Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers.
 
 
 ## <a id="Sources-header"></a>Sources of Data
