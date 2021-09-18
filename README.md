@@ -173,6 +173,7 @@ Report section, Proposal draft, postgreSQL table, query and import.
 Python coding, Data Tansformation report section.
 * [Jessica Uppal](https://github.com/JessicaUppal)
 * [Muhammad Amjad](https://github.com/amjad5050)
+project propsal, data Extraction, SQL, Report/Readme
 
 
 Although tasks were assigned and worked on as shown above, work and decision making was always a team effort. 
