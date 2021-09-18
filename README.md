@@ -52,7 +52,7 @@ The config.py file should be stored in your local repository folder.
 ## <a id="Extraction-header"></a>Data Extraction
 
 Two files are selected from Kaggle.com and both files are csv format.
-Both files are converted to panda DataFrams.
+Both files are converted to panda DataFrames.
 
 Dataframes are named as manufacturer and stocks_df.
 All the columns are listed for both Dataframes.
