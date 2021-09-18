@@ -74,5 +74,7 @@ our final data frame (schema_ready_df) look like this (pic to be added)
 
 ## Load
 
+SQL schema is created to convert the final table in PostgreSQL.
+File is loaded  on PgAdmin. 
 
 
