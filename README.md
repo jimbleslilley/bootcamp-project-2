@@ -131,14 +131,14 @@ Now that we have finished our transformation, we could now begin loading this da
 
 ‘pgAdmin 4’ was used to create a postgreSQL table that included the headers (table names) from the dataframe. 
 
-![SQLtable.png](Readme_Images/ SQLtable.png)
+![SQLtable.png](Readme_Images/SQLtable.png)
 A localhost connection to a PostgreSQL server was created and a connection made to it. The *connection* was made via an *engine* on *Jupyter Notebook* that could talk to the *database*.
 
-![Connection to SQL.png](Readme_Images/ Connection to SQL png)
-![Connection to SQL2.png](Readme_Images/ Connection to SQL2 png)
+![Connection to SQL.png](Readme_Images/Connection to SQL png)
+![Connection to SQL2.png](Readme_Images/Connection to SQL2 png)
 
 A PostgreSQL query was then created on ‘pgAdmin 4’ to populate the table with the imported CSV datasets confirming the connection and successful importation of data.
-![QueryImage.png](Readme_Images/ QueryImage.png)
+![QueryImage.png](Readme_Images/QueryImage.png)
 
 
 ## Collaborators: 
