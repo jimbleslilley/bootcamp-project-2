@@ -2,33 +2,38 @@
 
 ![Covid_vaccine.jpg](Readme_Images/Covid_vaccine.jpg)
 
+## Collaborators: 
+* [Arshad Sheikh](https://github.com/ashsams18)
+* [James Lilley](https://github.com/jimbleslilley)
+* [Jessica Uppal](https://github.com/JessicaUppal)
+* [Muhammad Amjad](https://github.com/amjad5050)
+
+
+## Sources of Data:
+
+Our dataset contains two CSV files both located in the [resources](resources/) folder:
+
+![CSV_files.png](Readme_Images/CSV_files.png)
+
+
+* The country_vaccinations_by_manafacturer dataset is [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)  
+
+
+* The vaccine_stocks dataset is [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019) 
+
+
 
 ## Project Proposal
-The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both CSV’s and transformed using Jupyter notebook. The transformed data will then be loaded into a PostgreSQL database. 
+The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both CSVâ€™s and transformed using Jupyter notebook. The transformed data will then be loaded into a PostgreSQL database. 
 
 
 ## Goal of the ETL 
 
 The goal of this project is to produce a dataset which can utilised in further research by data analysts, who may be exploring production of COVID-19 Vaccines by individual manufacturers, and the effect this had on their company's stocks and consequently their success. Specific areas of application for a data analyst could include: 
 
-* Whether the location that vaccines are being supplied to, have an effect on the manufacturer's stock price. 
+* Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
 * Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
-
-
-## Sources of Data:
-
-The dataset contains two CSV files both located in the [resources](resources/) folder:
-
-![CSV_files.png](Readme_Images/CSV_files.png)
-
-Both are available from [Kaggle.com](https://www.kaggle.com)
-
-* The country_vaccinations_by_manafacturer dataset is the [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)  
-
-
-* The vaccine_stocks dataset is the [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019) 
-
 
 ## Required Setup
 To run the notebook.ipynb file you will need to install the following packages/dependencies:
@@ -37,15 +42,21 @@ To run the notebook.ipynb file you will need to install the following packages/d
 * Psycopg2 `pip install psycopg2`
 
 To connect to the PostgreSQL database you will need to add your PgAdmin 4 username and password to a config.py file
-
 ![config_file.png](Readme_Images/config_file.png)
+The config.py file should be stored in your local repository folder.
+## Extract
+files are selected from Kaggle.com and the  files are csv format
+files are converted to panda Data Frams
+All the columns are checkecked
+Ensure the dates and vaccine manufacturer names in each table match so that the tables can be joined
 
-The config.py file should be stored in your local cloned repository folder.
+## Transform
+8 manufactures are found ['BioNTech', 'Moderna', 'Johnson & Johnson', 'Inovio Pharmaceuticals', 'Sinovac', 'Sinopharm', 'Novavax', 'Astrazeneca']
+The above columns  were manually found and listed.
 
-
-## Collaborators: 
-* [Arshad Sheikh](https://github.com/ashsams18)
-* [James Lilley](https://github.com/jimbleslilley)
-* [Jessica Uppal](https://github.com/JessicaUppal)
-* [Muhammad Amjad](https://github.com/amjad5050)
-
+The following columns in the manufacturer_df table need to be renamed to match the stocks_df
+{'Pfizer/BioNTech' : 'BioNTech',
+                                                      'Johnson&Johnson' : 'Johnson & Johnson',
+                                                      'Sinopharm/Beijing': 'Sinopharm',
+                                                      'Oxford/AstraZeneca' : 'Astrazeneca'}
+Before Joining Tables date types checked in both and Both dates follow the same format, no changes needed
