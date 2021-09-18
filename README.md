@@ -172,7 +172,11 @@ Report section, Proposal draft, postgreSQL table, query and import.
 
 Python coding, Data Tansformation report section.
 * [Jessica Uppal](https://github.com/JessicaUppal)
+
+README document,reporting and extracting data
+
 * [Muhammad Amjad](https://github.com/amjad5050)
+
 project propsal, data Extraction, SQL, Report/Readme
 
 
