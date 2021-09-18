@@ -1,31 +1,21 @@
 ﻿# Project #2: Extract, Transform, and Load
-
 ![Covid_vaccine.jpg](Readme_Images/Covid_vaccine.jpg)
-
-
 ## Project Proposal
-The project will be focussing on two different sources of data on Covid-19: Vaccinations by Manufacturers, and Vaccine Stocks. Data will be extracted from both CSV’s and transformed using Jupyter notebook. The transformed data will then be loaded into a PostgreSQL database. 
+The project focuses on the current topic of COVID-19 vaccinations. The chosen dataset’s have been extracted from two different sources of data: Vaccinations by Manufacturers, and Vaccine Stocks. The data transformation process will be performed using Jupyter Notebook, and then be loaded into a PostgreSQL database preparing the data for further analysis to be performed.
 
+[<img src="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg" align="right"  width="100">](https://www.postgresql.org/)
 
 ## Goal of the ETL 
-
 The goal of this project is to produce a dataset which can utilised in further research by data analysts, who may be exploring production of COVID-19 Vaccines by individual manufacturers, and the effect this had on their company's stocks and consequently their success. Specific areas of application for a data analyst could include: 
-
 * Whether the location vaccines are being supplied to have an effect on the manufacturer's stock price. 
 * If the volume of vaccines being supplied over time can be correlated to a vaccine manufacturer's stock price. 
 * Potential relationships between the total vaccines supplied and the average stock value of all vaccine manufacturers. 
-
 ## Sources of Data:
-
 Our dataset contains two CSV files available from [Kaggle.com](https://www.kaggle.com). Both CSV’s are located in the [resources](resources/) folder:
 
 ![CSV_files.png](Readme_Images/CSV_files.png)
-
-
 * The country_vaccinations_by_manafacturer CSV is from the [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress) dataset.
-
-
-* The vaccine_stocks CSV is from the [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019). 
+* The vaccine_stocks CSV is from the [COVID-19 Vaccine Companies: Stock Data](https://www.kaggle.com/akpmpr/covid-vaccine-companies-stock-data-from-2019) dataset.
 
 
 ## Required Setup
@@ -161,6 +151,7 @@ Data was converted, cleaned and transformed. Also all group members collaborated
 ## Project Day 3 
 Jessica and Amjad took the responsibilty of writting the Readme.Arshad got extracts on Report. Finally all group members decided 
 to take small parts of reports and everyone contributed in preparing the final Readme/report.
+
 
 
 
