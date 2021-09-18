@@ -69,7 +69,8 @@ As such, we can confirm no data is missing.
 When we drop duplicates from our final table, we will expect to see 3824.0 rows.
 a new dataframe sorted_df is created. it has coulmns of manufacturer and High.
 This is carried out in the same way for each of the differnt stock types to add the remaining five columns which are Low,	Open,	Close	,Volume, and	Adj Close.
-our final data frame look like this (pic to be added)
+Once this is done, we can go back to our manufacturer table, and join the locations to this table
+our final data frame (schema_ready_df) look like this (pic to be added)
 
 ## Load
 
