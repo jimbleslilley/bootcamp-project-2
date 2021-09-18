@@ -166,6 +166,7 @@ A PostgreSQL query was then created on ‘pgAdmin 4’ to populate the table wit
 ## <a id="Collaborators-header"></a>Collaborators
 
 * [Arshad Sheikh](https://github.com/ashsams18)
+
 Report section, Proposal draft, postgreSQL table, query and import.
 
 * [James Lilley](https://github.com/jimbleslilley)
@@ -177,7 +178,7 @@ README document,reporting and extracting data
 
 * [Muhammad Amjad](https://github.com/amjad5050)
 
-project propsal, data Extraction, SQL, Report/Readme
+Project propsal, Data Extraction, SQL, Report/README
 
 
 Although tasks were assigned and worked on as shown above, work and decision making was always a team effort. 
