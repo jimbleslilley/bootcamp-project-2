@@ -39,8 +39,10 @@ To connect to the PostgreSQL database you will need to add your PgAdmin 4 userna
 The config.py file should be stored in your local repository folder.
 
 ## Extract
-Two files are selected from Kaggle.com and the files are csv format.
+Two files are selected from Kaggle.com and both files are csv format.
  Both files are converted to panda Data Frams
+Dataframes are named as manufacturer_df and stocks_df.
+
 All the columns are checked to
 ensure the dates and vaccine manufacturer names in each table match so that the tables can be joined.
 
