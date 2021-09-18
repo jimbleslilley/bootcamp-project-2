@@ -116,5 +116,5 @@ Data was converted, cleaned and transformed. Also all group members collaborated
 Jessica and Amjad took the responsibilty of writting the Readme.Arshad got extracts on Report. Finally all group members decided 
 to take small parts of reports and everyone contributed in preparing the final Readme/report.
 
-take small portions of report 
+
 
